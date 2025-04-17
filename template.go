@@ -30,6 +30,6 @@ func templ() {
 	fmt.Println("Starting web server at http://localhost:8080/")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil{
-		fmt.Errorf(err.Error())
+		fmt.Println(err.Error())
 	}
 }
